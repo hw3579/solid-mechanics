@@ -8,37 +8,58 @@ In this section, the Young's modulus of two materials
 
 A total of six groups of data were obtained from the experiment. (See Table \ref{t1})
 
+
+\subsection*{Analysis}
+
+By plotting these 6 groups of data on a scatter plot and performing 
+regression analysis, a total of 6 groups of graphs were obtained.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=18.7cm,height=26cm]{./fig/mix.jpg}
+    \caption{This is an inserted JPG graphic}
+    \label{f1}
+\end{figure}
+
 \begin{minipage}[t]{\textwidth}
     \makeatletter\def\@captype{table}
     \centering
     \scalebox{1.1}{
-    \begin{tabular}{lll} 
+    \begin{tabular}{llll} 
         \hline
-        No.  & Material    & Final load (N)     \\ \hline
-        1 & Steel     & 50    \\
-        2 & Steel      & 100   \\
-        3 & Steel      & 150   \\
-        4 & Aluminium     & 50  \\
-        5 & Aluminium    & 100   \\
-        6 & Aluminium & 150   \\ \hline          
+        No.  & Material    & Final load (N) & R-square    \\ \hline
+        1 & Steel     & 50   & 0.9999\\
+        2 & Steel      & 100  & 0.9998\\
+        3 & Steel      & 150   & 0.9989\\
+        4 & Aluminium     & 50  & 0.9999\\
+        5 & Aluminium    & 100   & 0.9999\\
+        6 & Aluminium & 150   & 0.9987\\ \hline          
     \end{tabular}} 
     \caption{result of A1 regression analysis}
     \label{t1} 
 \end{minipage}
 
+In order to calculate E, the moment of inertia I needs to be calculated first.
 
+\begin{equation} 
+I=\frac{bh^3}{12}=\frac{20*3^3}{12}*10^{-12}=4.5*10^{-11} (mm^4)
+\end{equation}
 
-By plotting these 6 groups of data on a scatter plot and performing 
-regression analysis, a total of 6 groups of graphs were obtained.
+We know 
+\begin{equation} 
+    \delta_{max}=\frac{PL^3}{48EI}
+\end{equation}
 
-The results are shown in the next section.
+And the slope of the regression analysis
+\begin{equation} 
+    K=\frac{P}{\delta}=\frac{48EI}{L^3}
+\end{equation}
 
+So
 
-\subsection*{Analysis}
-
-
-
-
+\begin{equation} 
+    E=(\frac{P}{\delta})*\frac{L^3}{48}=K*\frac{L^3}{48}
+\end{equation}
 
 \begin{minipage}[t]{\textwidth}
     \makeatletter\def\@captype{table}
@@ -59,11 +80,7 @@ The results are shown in the next section.
 \end{minipage}
 
 
-\begin{figure}
-    \centering
-    \includegraphics[]{./fig/1.eps}
-    \caption{yes}
-    \label{1}
-\end{figure}
-
 \subsection*{Summary}
+
+
+
