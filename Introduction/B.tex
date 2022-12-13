@@ -1,9 +1,38 @@
 \section*{Section B}
 \label{sec:Section B}
 \FloatBarrier % Now figures cannot float above section title
+In this section, the deformation of each material under different 
+forces can be calculated from the data obtained in section A.
 
+\subsection*{Analysis}
 
-\subsection*{Results}
+We know
+\begin{equation} 
+    \delta_{max}=\frac{PL^3}{48EI}=\frac{P*0.1^3}{48*E_{exp}*4.5*10^{-11}}
+\end{equation}
 
+Using the $E_{exp}$ in different material(Mild Steel and Aluminium)
+ with different force(50N, 100N, 150N) in Table \ref{t2}, the data in Table \ref{t3} can be calculated.
 
-\subsection*{Summarise}
+\begin{minipage}[htbp]{\textwidth}
+    \makeatletter\def\@captype{table}
+    \centering
+    \scalebox{1.1}{
+    \begin{tabular}{lll} 
+        \hline
+        Bending Displacement  & Mild Steel    & Aluminium     \\ \hline
+        $\delta_{AN\_{1}}(P=50N)$ & 0.1341    & 0.3631    \\
+        $\delta_{AN\_{2}}(P=100N)$ & 0.2681     & 0.7262   \\
+        $\delta_{AN\_{3}}(P=150N)$ & 0.4022     & 1.0893  \\ \hline          
+    \end{tabular}} 
+    
+    (Unit: GPa)
+    \caption{result of A1 regression analysis}
+    \label{t3} 
+\end{minipage}
+
+\subsection*{Summary}
+
+Bringing the average modulus of elasticity into the equation enables 
+a more accurate calculation of the deformation of the material under 
+different forces and helps to reduce experimental errors.
