@@ -5,19 +5,42 @@
 
 \subsection*{Comparison of results}
 
-By comparing the experimental data with the results of the ANSYS analysis, 
+By comparing the experimental data(See Table \ref{t3}) with the results of the ANSYS analysis(See Table \ref{t4}), 
 it can be found that all six groups of data measured in the laboratory have 
 larger deformation values than the ANSYS analysis. This is due to the fact 
 that the modulus of elasticity of the laboratory material is 172.67GPa(Mild Steel) and 63.75GPa(Aluminium), 
-both of which are smaller than the theoretical value of the material(210GPa and 70GPa).
+both of which are smaller than the theoretical value of the material(210GPa and 71GPa).
 
 
 In addition, the percentage deformation of mild steel is larger than 
 that of aluminium 
 (i.e. $\frac{\delta_{AN}-\delta_{FE}}{\delta_{FE}}*100\%$)
 and this may also be due to the larger modulus of elasticity of mild steel.
+Result shows in Table \ref{t5}.
 
-\subsection*{Possible reasons}
+\begin{minipage}[htbp]{\textwidth}
+    \makeatletter\def\@captype{table}
+    \centering
+    \scalebox{1.1}{
+    \begin{tabular}{lllll} 
+        \hline
+        Force  & Mild Steel(mm)  &Error(\%)  & Aluminium(mm) & Error(\%)   \\ \hline
+        $P=50N$ & 0.0190  & 16.534 & 0.0363  & 11.219 \\
+        $P=100N$ & 0.0381 & 16.539  & 0.0789 & 12.186\\
+        $P=150N$ & 0.0571 & 16.537  & 0.1183 & 12.187\\
+        Average &        &   16.54     &      &  11.86    \\ \hline          
+    \end{tabular}} 
+
+    \caption{Difference deformation in Mild Steel and Aluminium}
+    \label{t5} 
+\end{minipage}
+
+
+
+
+
+
+\subsection*{Possible reasons in error analysis}
 $\bullet$ Insufficient material purity or inhomogeneous density 
 resulting in a modulus of elasticity less than the theoretical value.
 
@@ -27,7 +50,7 @@ experimental piece resulted in inaccurate deformation of the measurement.
 $\bullet$ Errors caused by machines not being calibrated before measurement or 
 by the machine's own measurement issues.
 
-\subsection*{Experimental improvements}
+\subsection*{Experimental improvements and optimisation}
 
 $\bullet$ Replacement of materials with new materials which are not affected by 
 the memory effects.
